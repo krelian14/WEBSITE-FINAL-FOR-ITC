@@ -1,0 +1,191 @@
+/* Global Styles */
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    border-radius: 20px;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #d3a376;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+img{
+    float: left;
+    
+}
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #f8f8f8;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    background-color: #ffe0b2;
+    border-radius: 1rem 2rem 3rem 4rem;
+    box-shadow: 0 6px 70px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem 2rem 3rem 4rem;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.menu-item span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.order-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #45a049;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #f8f8f8;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #afa84c;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .order-btn {
+        width: 100%;
+    }
+
+    .contact-section form input, .contact-section form textarea {
+        width: 100%;
+    }
+}
